@@ -1,101 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Name | Portfolio</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-
-    header {
-      background-color: #ddd;
-      padding: 20px;
-      text-align: center;
-    }
-
-    h1 {
-      font-size: 2em;
-      margin-bottom: 0;
-    }
-
-    p {
-      font-size: 1.2em;
-      margin: 10px 0;
-    }
-
-    nav {
-      background-color: #eee;
-      padding: 10px;
-    }
-
-    nav ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
-
-    nav li {
-      display: inline-block;
-      margin-right: 20px;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: #333;
-    }
-
-    section {
-      padding: 20px;
-    }
-
-    footer {
-      background-color: #ddd;
-      text-align: center;
-      padding: 10px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saqib Ali Qureshi - Backend Developer</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 5px solid #00aaff;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav {
+            margin-top: 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: #00aaff;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+        #showcase {
+            min-height: 400px;
+            background: url('https://via.placeholder.com/1500x400') no-repeat center center/cover;
+            color: #fff;
+            text-align: center;
+            padding-top: 100px;
+        }
+        #showcase h1 {
+            font-size: 55px;
+            margin-top: 0;
+        }
+        #showcase p {
+            font-size: 20px;
+        }
+        .content {
+            padding: 30px 0;
+            line-height: 1.6em;
+        }
+        .content h2 {
+            font-size: 2em;
+            border-bottom: 2px solid #00aaff;
+            padding-bottom: 10px;
+        }
+        .content p, .content ul {
+            font-size: 1.1em;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 30px;
+        }
+        .project-item {
+            margin: 20px 0;
+        }
+        .project-item h3 {
+            font-size: 1.5em;
+            margin-bottom: 5px;
+        }
+        .project-item p {
+            margin: 5px 0;
+        }
+        .contact-form {
+            background: #fff;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            background: #00aaff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
+    <header>
+        <div class="container">
+            <h1>Saqib Ali Qureshi</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-  <header>
-    <h1>Your Name</h1>
-    <p>Your Job Title/Description</p>
-  </header>
+    <section id="showcase">
+        <div class="container">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Backend Developer specializing in Java</p>
+        </div>
+    </section>
 
-  <nav>
-    <ul>
-      <li><a href="#about">About Me</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+    <section id="about" class="content">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>
+                Hi, I'm Saqib Ali Qureshi, a dedicated backend developer with a passion for building robust and scalable applications. With extensive experience in Java and various backend technologies, I thrive on solving complex problems and delivering high-quality solutions. My expertise lies in creating efficient, maintainable code and working collaboratively in dynamic environments.
+            </p>
+        </div>
+    </section>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Write a brief introduction about yourself and your skills.</p>
-  </section>
+    <section id="projects" class="content">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="project-item">
+                <h3>Project 1: E-commerce Platform</h3>
+                <p>Developed a full-featured e-commerce platform with user authentication, product management, and order processing.</p>
+            </div>
+            <div class="project-item">
+                <h3>Project 2: RESTful API for Social Media</h3>
+                <p>Built a scalable RESTful API for a social media application, including user profiles, posts, and comments functionality.</p>
+            </div>
+            <div class="project-item">
+                <h3>Project 3: Inventory Management System</h3>
+                <p>Created an inventory management system to streamline warehouse operations, including stock tracking and reporting.</p>
+            </div>
+            <!-- Add more projects as needed -->
+        </div>
+    </section>
 
-  <section id="services">
-    <h2>Services</h2>
-    <ul>
-      <li>Service 1 Description</li>
-      <li>Service 2 Description</li>
-      <li>Service 3 Description</li>
-    </ul>
-  </section>
+    <section id="contact" class="content">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form class="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <p>
+                Alternatively, you can reach me at:
+                <ul>
+                    <li>Email: <a href="mailto:saqib@example.com" style="color: #00aaff;">saqib@example.com</a></li>
+                    <li>LinkedIn: <a href="https://linkedin.com/in/saqibaliqureshi" style="color: #00aaff;">linkedin.com/in/saqibaliqureshi</a></li>
+                    <li>GitHub: <a href="https://github.com/saqibaliqureshi" style="color: #00aaff;">github.com/saqibaliqureshi</a></li>
+                </ul>
+            </p>
+        </div>
+    </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Provide your contact information (email, social media links, etc.)</p>
-  </section>
-
-  <footer>
-    <p>&copy; Your Name 2024</p>
-  </footer>
-
+    <footer>
+        <p>&copy; 2024 Saqib Ali Qureshi. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
