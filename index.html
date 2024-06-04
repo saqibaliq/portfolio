@@ -6,7 +6,7 @@
     <title>Saqib Ali Qureshi - Portfolio</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             background-color: #000;
             color: #fff;
             margin: 0;
@@ -18,39 +18,36 @@
             overflow: hidden;
         }
         header {
-            background: #333;
+            background: #222;
             color: #fff;
-            padding-top: 30px;
-            min-height: 70px;
-            border-bottom: #77A6B6 3px solid;
+            padding: 20px 0;
+            border-bottom: 3px solid #77A6B6;
+            text-align: center;
         }
-        header a {
-            color: #fff;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 16px;
-        }
-        header ul {
-            padding: 0;
-            list-style: none;
-        }
-        header li {
-            display: inline;
-            padding: 0 20px 0 20px;
-        }
-        header #branding {
-            float: left;
-        }
-        header #branding h1 {
+        header h1 {
             margin: 0;
+            font-size: 2.5em;
         }
-        header nav {
-            float: right;
-            margin-top: 10px;
+        nav {
+            margin: 20px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: #77A6B6;
+            text-decoration: none;
+            font-size: 1.2em;
         }
         #showcase {
             min-height: 400px;
-            background: #333;
+            background: url('https://via.placeholder.com/1500x400') no-repeat center center/cover;
             color: #fff;
             text-align: center;
             padding-top: 100px;
@@ -59,25 +56,44 @@
             font-size: 55px;
             margin-top: 0;
         }
+        #showcase p {
+            font-size: 20px;
+        }
         .content {
             padding: 30px;
             line-height: 1.6em;
         }
+        .content h2 {
+            font-size: 2em;
+            border-bottom: 2px solid #77A6B6;
+            padding-bottom: 10px;
+        }
+        .content p, .content ul {
+            font-size: 1.1em;
+        }
         footer {
-            background: #333;
+            background: #222;
             color: #fff;
             text-align: center;
             padding: 10px 0;
             margin-top: 30px;
+        }
+        .project-item {
+            margin: 20px 0;
+        }
+        .project-item h3 {
+            font-size: 1.5em;
+            margin-bottom: 5px;
+        }
+        .project-item p {
+            margin: 5px 0;
         }
     </style>
 </head>
 <body>
     <header>
         <div class="container">
-            <div id="branding">
-                <h1>Saqib Ali Qureshi</h1>
-            </div>
+            <h1>Saqib Ali Qureshi</h1>
             <nav>
                 <ul>
                     <li><a href="#about">About</a></li>
@@ -110,12 +126,19 @@
     <section id="projects" class="content">
         <div class="container">
             <h2>My Projects</h2>
-            <ul>
-                <li>Project 1 - Description of your first project.</li>
-                <li>Project 2 - Description of your second project.</li>
-                <li>Project 3 - Description of your third project.</li>
-                <!-- Add more projects as needed -->
-            </ul>
+            <div class="project-item">
+                <h3>Project 1</h3>
+                <p>Description of your first project.</p>
+            </div>
+            <div class="project-item">
+                <h3>Project 2</h3>
+                <p>Description of your second project.</p>
+            </div>
+            <div class="project-item">
+                <h3>Project 3</h3>
+                <p>Description of your third project.</p>
+            </div>
+            <!-- Add more projects as needed -->
         </div>
     </section>
 
